@@ -1,6 +1,6 @@
 package com.crypto.transformer;
 
-import com.crypto.model.Alphabet;
+import com.crypto.constans.Alphabet;
 
 public class TextTransformer {
 
@@ -17,7 +17,6 @@ public class TextTransformer {
                 result.append(ch);
             }
         }
-
         return result.toString();
     }
 
@@ -34,7 +33,6 @@ public class TextTransformer {
                 result.append(ch);
             }
         }
-
         return result.toString();
     }
 }

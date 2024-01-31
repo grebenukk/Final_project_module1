@@ -1,4 +1,4 @@
-package com.crypto.model;
+package com.crypto.constans;
 
 import java.util.ArrayList;
 import java.util.Arrays;

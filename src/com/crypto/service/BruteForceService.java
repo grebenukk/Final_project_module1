@@ -10,7 +10,7 @@ public class BruteForceService {
 
     public void decrypt(File file) {
         if (!file.exists()) {
-            System.out.println("Файл не существует");
+            System.out.println("File does not exist");
             return;
         }
 
