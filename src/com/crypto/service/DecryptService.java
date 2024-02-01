@@ -9,10 +9,6 @@ public class DecryptService {
     private TextTransformer textTransformer = new TextTransformer();
 
     public void decrypt(File file, int key) {
-        if (!file.exists()) {
-            System.out.println("File does not exist");
-            return;
-        }
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
             StringBuilder content = new StringBuilder();

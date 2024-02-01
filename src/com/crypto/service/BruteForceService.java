@@ -9,11 +9,6 @@ public class BruteForceService {
     private TextTransformer textTransformer = new TextTransformer();
 
     public void decrypt(File file) {
-        if (!file.exists()) {
-            System.out.println("File does not exist");
-            return;
-        }
-
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
             StringBuilder content = new StringBuilder();
@@ -30,7 +25,6 @@ public class BruteForceService {
 
                 if (indexSymbol > 0) {
                     String nextSymbol = decryptedText.substring(indexSymbol + 1, indexSymbol + 2);
-
                     if (nextSymbol.equals(" ")) {
                         decryptService.decrypt(file, i);
                     }
